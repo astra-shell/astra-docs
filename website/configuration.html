@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration - Astra</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Astra</h1>
+    <p>Configuration</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="getting-started.html">Getting Started</a>
+    <a href="themes.html">Themes</a>
+    <a href="commands.html">Commands</a>
+    <a href="plugins.html">Plugins</a>
+</nav>
+
+
+<main>
+
+<section>
+
+<h2>Configuration File</h2>
+
+<p>
+Astra uses a TOML configuration file:
+</p>
+
+<pre>
+~/.astrarc
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>General Settings</h2>
+
+<pre>
+[general]
+
+theme = "crimson"
+startup_message = true
+update_check = false
+telemetry = false
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Prompt Settings</h2>
+
+<pre>
+[prompt]
+
+show_user = true
+show_hostname = true
+show_directory = true
+show_git = true
+show_time = true
+symbol = "❯"
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>History</h2>
+
+<pre>
+[history]
+
+enabled = true
+file = "~/.astra_history"
+size = 10000
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Aliases</h2>
+
+<p>
+Aliases allow shortcuts for commands.
+</p>
+
+<pre>
+[aliases]
+
+ll = "ls -la"
+gs = "git status"
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Appearance</h2>
+
+<pre>
+[appearance]
+
+unicode = true
+nerd_fonts = true
+animations = true
+compact = false
+</pre>
+
+</section>
+
+
+</main>
+
+
+<footer>
+Astra Shell Documentation
+</footer>
+
+</body>
+</html>
