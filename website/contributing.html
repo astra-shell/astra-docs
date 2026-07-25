@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributing - Astra</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Astra</h1>
+    <p>Contributing</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="getting-started.html">Getting Started</a>
+    <a href="configuration.html">Configuration</a>
+    <a href="themes.html">Themes</a>
+    <a href="commands.html">Commands</a>
+    <a href="plugins.html">Plugins</a>
+    <a href="development.html">Development</a>
+</nav>
+
+
+<main>
+
+<section>
+
+<h2>Contributing to Astra</h2>
+
+<p>
+Astra is an open-source project and contributions are welcome.
+Development should focus on improving reliability, performance, and
+the user experience.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Getting Started</h2>
+
+<p>
+Before contributing, set up a local development environment.
+</p>
+
+<pre>
+git clone https://github.com/SYOP200/astra-shell
+cd astra-shell
+
+cargo build
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Creating Changes</h2>
+
+<p>
+When working on Astra:
+</p>
+
+<ul>
+<li>Keep changes focused</li>
+<li>Follow Rust formatting standards</li>
+<li>Avoid unnecessary dependencies</li>
+<li>Update documentation for user-facing features</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Branches</h2>
+
+<p>
+Use descriptive branch names:
+</p>
+
+<pre>
+feature/plugin-system
+
+feature/new-theme
+
+fix/history-loading
+
+docs/configuration
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Pull Requests</h2>
+
+<p>
+A good pull request should include:
+</p>
+
+<ul>
+<li>A clear description of the change</li>
+<li>Testing information</li>
+<li>Documentation updates if needed</li>
+<li>No compiler warnings</li>
+</ul>
+
+<p>
+Before submitting:</p>
+
+<pre>
+cargo fmt
+cargo clippy
+cargo test
+cargo build --release
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Reporting Issues</h2>
+
+<p>
+When reporting a bug, include:
+</p>
+
+<ul>
+<li>Operating system</li>
+<li>Astra version</li>
+<li>Steps to reproduce the issue</li>
+<li>Error output</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Feature Requests</h2>
+
+<p>
+Feature requests should explain:
+</p>
+
+<ul>
+<li>The problem being solved</li>
+<li>Why the feature would improve Astra</li>
+<li>Possible implementation ideas</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Code Guidelines</h2>
+
+<ul>
+<li>Prefer readable code over clever code</li>
+<li>Keep modules separated by responsibility</li>
+<li>Handle errors safely</li>
+<li>Keep configuration backward compatible</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Community</h2>
+
+<p>
+Astra aims to build a community around customizable shell development.
+Developers, testers, documentation writers, and designers can all
+contribute.
+</p>
+
+</section>
+
+
+</main>
+
+
+<footer>
+Astra Shell Documentation
+</footer>
+
+</body>
+</html>
