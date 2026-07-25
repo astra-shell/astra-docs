@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development - Astra</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Astra</h1>
+    <p>Development</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="getting-started.html">Getting Started</a>
+    <a href="configuration.html">Configuration</a>
+    <a href="themes.html">Themes</a>
+    <a href="commands.html">Commands</a>
+    <a href="plugins.html">Plugins</a>
+    <a href="contributing.html">Contributing</a>
+</nav>
+
+
+<main>
+
+<section>
+
+<h2>Development Environment</h2>
+
+<p>
+Astra is written in Rust and uses Cargo for building, testing, and
+dependency management.
+</p>
+
+<p>
+Required tools:
+</p>
+
+<ul>
+<li>Rust stable toolchain</li>
+<li>Cargo</li>
+<li>Git</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Clone the Repository</h2>
+
+<pre>
+git clone https://github.com/SYOP200/astra-shell
+cd astra-shell
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Building Astra</h2>
+
+<p>
+Build a development version:
+</p>
+
+<pre>
+cargo build
+</pre>
+
+<p>
+Build an optimized release version:
+</p>
+
+<pre>
+cargo build --release
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Project Structure</h2>
+
+<pre>
+astra-shell/
+
+├── src/
+│   ├── main.rs
+│   ├── shell.rs
+│   ├── parser.rs
+│   ├── executor.rs
+│   ├── prompt.rs
+│   ├── config.rs
+│   ├── theme.rs
+│   └── completion.rs
+│
+├── bin/
+│   └── install
+│
+├── packaging/
+│
+├── Cargo.toml
+├── Makefile
+└── README.md
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Code Style</h2>
+
+<p>
+Astra follows standard Rust formatting and linting practices.
+</p>
+
+<pre>
+cargo fmt
+
+cargo clippy
+</pre>
+
+<p>
+Before submitting changes, make sure the project builds without warnings.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Testing</h2>
+
+<p>
+Run the test suite:
+</p>
+
+<pre>
+cargo test
+</pre>
+
+<p>
+Tests should cover new functionality and prevent regressions.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Architecture</h2>
+
+<p>
+Astra is divided into several components:
+</p>
+
+<ul>
+<li><strong>Shell</strong> - manages the interactive loop</li>
+<li><strong>Parser</strong> - processes user input</li>
+<li><strong>Executor</strong> - launches commands</li>
+<li><strong>Prompt</strong> - renders the terminal interface</li>
+<li><strong>Config</strong> - manages user settings</li>
+<li><strong>Theme</strong> - controls visual appearance</li>
+<li><strong>Completion</strong> - handles suggestions</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Adding Features</h2>
+
+<p>
+When adding a feature:
+</p>
+
+<ul>
+<li>Create focused modules</li>
+<li>Avoid unnecessary dependencies</li>
+<li>Keep configuration optional</li>
+<li>Document user-facing changes</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Building Releases</h2>
+
+<p>
+Release builds are created using:
+</p>
+
+<pre>
+cargo build --release
+</pre>
+
+<p>
+Future releases will provide binaries for:
+</p>
+
+<ul>
+<li>macOS Intel</li>
+<li>macOS Apple Silicon</li>
+<li>Linux x86_64</li>
+<li>Linux ARM64</li>
+</ul>
+
+</section>
+
+
+</main>
+
+
+<footer>
+Astra Shell Documentation
+</footer>
+
+</body>
+</html>
