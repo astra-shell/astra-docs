@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started - Astra</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Astra</h1>
+    <p>Getting Started</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="configuration.html">Configuration</a>
+    <a href="themes.html">Themes</a>
+    <a href="commands.html">Commands</a>
+    <a href="plugins.html">Plugins</a>
+    <a href="development.html">Development</a>
+</nav>
+
+
+<main>
+
+<section>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>Rust toolchain</li>
+<li>Git</li>
+<li>A Unix-based operating system</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Building From Source</h2>
+
+<p>
+Clone the Astra repository and build the release binary.
+</p>
+
+<pre>
+git clone https://github.com/SYOP200/astra-shell
+cd astra-shell
+cargo build --release
+</pre>
+
+<p>
+The compiled binary will be located at:
+</p>
+
+<pre>
+target/release/astra
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Installing Astra</h2>
+
+<p>
+Astra includes an installation script.
+</p>
+
+<pre>
+chmod +x bin/install
+./bin/install
+</pre>
+
+<p>
+After installation:
+</p>
+
+<pre>
+astra
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>First Launch</h2>
+
+<p>
+On first launch Astra creates a default configuration file:
+</p>
+
+<pre>
+~/.astrarc
+</pre>
+
+<p>
+This file controls themes, aliases, prompt settings, and behavior.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Updating</h2>
+
+<pre>
+git pull
+cargo build --release
+</pre>
+
+</section>
+
+</main>
+
+
+<footer>
+Astra Shell Documentation
+</footer>
+
+</body>
+</html>
