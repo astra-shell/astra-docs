@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themes - Astra</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Astra</h1>
+    <p>Themes</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="getting-started.html">Getting Started</a>
+    <a href="configuration.html">Configuration</a>
+    <a href="commands.html">Commands</a>
+    <a href="plugins.html">Plugins</a>
+</nav>
+
+
+<main>
+
+<section>
+
+<h2>Theme System</h2>
+
+<p>
+Astra uses a theme system to control how the shell prompt looks.
+Themes define the identity, symbols, and enabled prompt sections.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Available Themes</h2>
+
+<ul>
+<li><strong>Crimson</strong> - Default Astra theme with a red terminal aesthetic.</li>
+<li><strong>Midnight</strong> - Minimal dark theme.</li>
+<li><strong>Matrix</strong> - Compact developer-focused theme.</li>
+<li><strong>Obsidian</strong> - Reduced prompt with fewer elements.</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Selecting a Theme</h2>
+
+<p>
+Change the theme in:
+</p>
+
+<pre>
+~/.astrarc
+</pre>
+
+<p>
+Example:
+</p>
+
+<pre>
+[general]
+
+theme = "midnight"
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Prompt Components</h2>
+
+<p>
+Themes can control the following prompt sections:
+</p>
+
+<ul>
+<li>User name</li>
+<li>Hostname</li>
+<li>Current directory</li>
+<li>Git branch information</li>
+<li>Current time</li>
+<li>Prompt symbol</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Creating Custom Themes</h2>
+
+<p>
+Custom themes can be added by extending Astra's theme system.
+</p>
+
+<pre>
+src/theme.rs
+</pre>
+
+<p>
+A theme contains:</p>
+
+<pre>
+name
+prompt_symbol
+show_user
+show_hostname
+show_directory
+show_git
+show_time
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Design Philosophy</h2>
+
+<p>
+Astra themes are designed around clarity and speed.
+The prompt should provide useful information without becoming distracting.
+</p>
+
+</section>
+
+
+</main>
+
+
+<footer>
+Astra Shell Documentation
+</footer>
+
+</body>
+</html>
