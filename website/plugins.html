@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins - Astra</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Astra</h1>
+    <p>Plugins</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="getting-started.html">Getting Started</a>
+    <a href="configuration.html">Configuration</a>
+    <a href="themes.html">Themes</a>
+    <a href="commands.html">Commands</a>
+    <a href="development.html">Development</a>
+</nav>
+
+
+<main>
+
+<section>
+
+<h2>Plugin System</h2>
+
+<p>
+Astra plugins extend shell functionality without requiring changes to
+the core shell.
+</p>
+
+<p>
+Plugins can add commands, integrations, completion features, and
+developer utilities.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Plugin Directory</h2>
+
+<p>
+By default, Astra looks for plugins in:
+</p>
+
+<pre>
+~/.astra/plugins
+</pre>
+
+<p>
+This location can be changed in:
+</p>
+
+<pre>
+~/.astrarc
+</pre>
+
+Example:
+
+<pre>
+[plugins]
+
+enabled = true
+directory = "~/.astra/plugins"
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Plugin Structure</h2>
+
+<p>
+A plugin should have its own directory:
+</p>
+
+<pre>
+~/.astra/plugins/
+
+example-plugin/
+├── plugin.toml
+└── main
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Plugin Manifest</h2>
+
+<p>
+Each plugin contains a manifest describing the plugin.
+</p>
+
+<pre>
+name = "example-plugin"
+version = "1.0.0"
+description = "Example Astra plugin"
+author = "Developer"
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Official Plugins</h2>
+
+<p>
+Future official plugins may include:
+</p>
+
+<ul>
+<li>Git utilities</li>
+<li>System information</li>
+<li>Development tools</li>
+<li>Container management</li>
+<li>Network utilities</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Community Plugins</h2>
+
+<p>
+Community plugins will eventually be distributed through the Astra
+plugin registry.
+</p>
+
+<p>
+Plugins should follow Astra's guidelines:
+</p>
+
+<ul>
+<li>Keep dependencies minimal</li>
+<li>Document installation steps</li>
+<li>Avoid modifying user data without permission</li>
+<li>Provide clear error messages</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Plugin Development</h2>
+
+<p>
+Plugin APIs are currently under development.
+</p>
+
+<p>
+Future plugin support will allow developers to create extensions using
+Rust and other supported languages.
+</p>
+
+</section>
+
+
+</main>
+
+
+<footer>
+Astra Shell Documentation
+</footer>
+
+</body>
+</html>
