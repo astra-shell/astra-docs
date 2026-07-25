@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - Astra</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Astra</h1>
+    <p>Commands</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="getting-started.html">Getting Started</a>
+    <a href="configuration.html">Configuration</a>
+    <a href="themes.html">Themes</a>
+    <a href="plugins.html">Plugins</a>
+    <a href="development.html">Development</a>
+</nav>
+
+
+<main>
+
+<section>
+
+<h2>Command Execution</h2>
+
+<p>
+Astra executes commands through the system environment while providing
+additional shell features such as aliases, history, completion, and
+custom prompt rendering.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Built-in Commands</h2>
+
+<p>
+Built-in commands are handled directly by Astra instead of being passed
+to the operating system.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>exit</h2>
+
+<pre>
+exit
+</pre>
+
+<p>
+Closes the Astra shell session.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>cd</h2>
+
+<pre>
+cd directory
+</pre>
+
+<p>
+Changes the current working directory.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>history</h2>
+
+<pre>
+history
+</pre>
+
+<p>
+Displays previously executed commands.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Aliases</h2>
+
+<p>
+Aliases create shortcuts for frequently used commands.
+</p>
+
+<pre>
+[aliases]
+
+ll = "ls -la"
+update = "cargo update"
+</pre>
+
+<p>
+After adding an alias, restart Astra to load the changes.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>External Commands</h2>
+
+<p>
+Commands not handled internally are executed through the operating system.
+Examples:
+</p>
+
+<pre>
+git status
+
+cargo build
+
+ls -la
+
+python3 script.py
+</pre>
+
+</section>
+
+
+<section>
+
+<h2>Command Completion</h2>
+
+<p>
+Astra provides command completion through its Rust-based completion
+system.
+</p>
+
+<p>
+Completion supports:</p>
+
+<ul>
+<li>Commands</li>
+<li>Files</li>
+<li>Directories</li>
+<li>Future plugin-provided completions</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Future Commands</h2>
+
+<p>
+Planned command additions include:
+</p>
+
+<ul>
+<li>astra config</li>
+<li>astra theme</li>
+<li>astra plugin</li>
+<li>astra update</li>
+</ul>
+
+</section>
+
+
+</main>
+
+
+<footer>
+Astra Shell Documentation
+</footer>
+
+</body>
+</html>
